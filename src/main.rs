@@ -9,7 +9,7 @@ type Word = String;
 
 #[derive(Clone, Debug)]
 struct GameState {
-    _user_requested_finish: bool,
+    user_requested_finish: bool,
     player_won: bool,
     guesses: Vec<Word>,
     misses: HashSet<Letter>,
